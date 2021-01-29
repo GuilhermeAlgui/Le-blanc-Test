@@ -1,0 +1,30 @@
+.header{
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+
+
+
+}
+
+.header .header-links{
+    display: flex;
+    background-color: cadetblue;
+    flex-grow: 1;
+    flex-direction: row;
+
+
+}
+
+.header .header-links .header-item{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    flex: 1;
+
+    text-decoration: none;
+    color: black;
+
+}

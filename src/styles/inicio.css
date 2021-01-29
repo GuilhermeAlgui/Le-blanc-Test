@@ -1,0 +1,95 @@
+.inicio{
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background-color: #EEEEEE;
+}
+
+.inicio-grid{
+    display: grid;
+    flex: 1;
+    grid-template-columns: 1fr 1fr;
+    background-color: #DDDDDD;
+    padding: 10px; 
+    grid-gap: 10px;
+}
+
+.inicio-grid-item{
+    max-height: 200px;
+    background-color: rgb(132, 233, 233);
+    border-radius: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px black solid
+    
+}
+
+.inicio-grid-item img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+
+.inicio-grid-item .inicio-item-text{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+}
+
+.inicio-grid-item .inicio-item-jogo{
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.inicio-grid-item .inicio-item-jogador{
+    font-size: 24px;
+    font-weight: normal;
+}
+.inicio-grid-item .inicio-item-data{
+    font-size: 20px;
+    font-weight: normal;
+}
+
+@media (max-width: 600px){
+    .inicio{
+
+    }
+
+    .inicio-grid{
+        
+        grid-template-columns: 1fr;
+        padding: 0;
+        padding-top: 10px;
+    }
+    .inicio-grid-item{
+        max-height: 150px;
+        padding-left: 0;
+        
+    }
+    .inicio-grid-item img{
+        max-width: 150px;
+        max-height: 150px;
+
+
+    }
+    
+.inicio-grid-item .inicio-item-jogo{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.inicio-grid-item .inicio-item-jogador{
+    font-size: 16px;
+    font-weight: normal;
+}
+.inicio-grid-item .inicio-item-data{
+    font-size: 12px;
+    font-weight: normal;
+}
+
+}
+

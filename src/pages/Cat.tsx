@@ -1,6 +1,7 @@
 import React from 'react';
-import Routes from './Routes';
-import './global.css'
+import logo from '../assets/cat.png';
+import Header from '../components/Header';
+import '../styles/cat.css';
 
 /*<img src={logo} className="App-logo" alt="logo" />
 <p>
@@ -15,12 +16,15 @@ import './global.css'
   Learn React
 </a>*/
 
-function App() {
+function Cat() {
 	return (
 		<div className='App'>
-			<Routes />
+			<Header pagina="Gatos"/>
+			<header className='App-header'>
+				<img src={logo} className='App-logo' alt='logo' />
+			</header>
 		</div>
 	);
 }
 
-export default App;
+export default Cat;
