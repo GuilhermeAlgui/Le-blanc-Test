@@ -1,0 +1,39 @@
+.App-cat {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  min-width: 100vw;
+  min-height: 100vh;
+  background-image: url(
+    https://media1.tenor.com/images/ca0c12a3f74901c2d1ba05567f368aa5/tenor.gif?itemid=13634648
+  );
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 1s linear;
+  }
+}
+
+.App-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+
+
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
