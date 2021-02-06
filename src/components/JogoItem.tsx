@@ -1,19 +1,22 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
 
 
 function JogoItem(props: {
+	iden?: number;
 	url: string;
 	jogo: string;
 	jogador: string;
 	data: string;
 }) {
-	const { url, jogo, jogador, data } = props;
-
+	const history = useHistory();
+	const {iden, url, jogo, jogador, data } = props;
+	const id = iden
 	return (
 		<div
 			onClick={(e) => {
-				const win = window.open(url, '_blank');
-				if (win) win.focus();
+				if(id)
+				history.push(`/jogo/${id}`)
 			}}
 			className='inicio-grid-item'>
 			<img src={url} alt={jogo} />
